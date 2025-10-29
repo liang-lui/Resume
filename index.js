@@ -43246,9 +43246,9 @@ To suppress this warning, you need to explicitly provide the \`palette.${key}Cha
     const theme2 = useTheme5();
     const isMobile = useMediaQuery_default(theme2.breakpoints.down("sm"));
     return /* @__PURE__ */ import_react11.default.createElement(Box_default, { id: "home", component: "header", sx: {
-      py: { xs: 8, md: 10 },
+      py: { xs: 6, md: 10 },
       // 增加垂直内边距
-      pt: { xs: 12, md: 16 },
+      pt: { xs: 10, md: 16 },
       // 特别增加上边距
       position: "relative"
     } }, /* @__PURE__ */ import_react11.default.createElement(
@@ -43259,7 +43259,7 @@ To suppress this warning, you need to explicitly provide the \`palette.${key}Cha
         alignItems: "center",
         justifyContent: "space-between",
         direction: isMobile ? "column-reverse" : "row",
-        px: isMobile ? 2 : 5
+        sx: { px: { xs: 1, sm: 2, md: 5 } }
       },
       /* @__PURE__ */ import_react11.default.createElement(Grid_default, { item: true, xs: 12, md: 8 }, /* @__PURE__ */ import_react11.default.createElement(Stack_default, { spacing: 3 }, /* @__PURE__ */ import_react11.default.createElement(Box_default, { sx: { maxWidth: "80%" } }, /* @__PURE__ */ import_react11.default.createElement(
         Typography_default,
@@ -44263,8 +44263,8 @@ To suppress this warning, you need to explicitly provide the \`palette.${key}Cha
         {
           maxWidth: "xl",
           sx: {
-            px: { xs: 2, sm: 3, md: 4 }
-            // 响应式内边距
+            px: { xs: 2, sm: 3, md: 4 },
+            overflowX: "hidden"
           }
         },
         /* @__PURE__ */ import_react16.default.createElement(Box_default, { component: "main", sx: { py: 4 } }, /* @__PURE__ */ import_react16.default.createElement(Header_default, null), /* @__PURE__ */ import_react16.default.createElement(Skills_default, null), /* @__PURE__ */ import_react16.default.createElement(Experience_default, null), /* @__PURE__ */ import_react16.default.createElement(Projects_default, null))

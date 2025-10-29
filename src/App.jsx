@@ -46,7 +46,8 @@ import Header from './components/Header';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Footer from './components/footer';   
+import Footer from './components/footer';
+import Banner from './assets/banner-bg.png';
 import './styles.css';
 
 function App() {
@@ -60,7 +61,7 @@ function App() {
                     minHeight: '100vh',
                     width: '1905px',
                     overflowX: 'hidden',
-                    backgroundImage: "url('/resume/banner-bg.png')",
+                    backgroundImage: `url(${Banner})`,
                     marginTop: -1,
                     marginLeft: -1,
                     marginBottom: -1,

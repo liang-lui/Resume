@@ -9,10 +9,11 @@ import {
   useTheme,
   useMediaQuery,
 } from '@mui/material';
+import codex from '../assets/codex.png';
 
 const experiences = [
   {
-    image: '/resume/unnamed.png',
+    image: codex,
     title: 'Full Stack Developer',
     company: 'Codex Studio',
     period: '2025 - Present',
@@ -123,7 +124,7 @@ const Experience = () => {
                   boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
                 }}
                 onError={(e) => {
-                  e.target.src = '/unnamed.png';
+                  e.target.src = exp.image;
                   e.target.onerror = null;
                 }}
               />

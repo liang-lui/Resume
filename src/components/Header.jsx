@@ -13,6 +13,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ProfileImage from '../assets/profile.jpg';
 
 const Header = () => {
   const theme = useTheme();
@@ -211,7 +212,7 @@ const Header = () => {
           {/* 头像 */}
           <Avatar
             alt="Wong Sim Bao"
-            src="/resume/2300835.jpg"
+            src={ProfileImage}
             sx={{
               width: 250,
               height: 250,

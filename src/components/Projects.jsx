@@ -15,12 +15,15 @@ import {
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
+import Goalify from '../assets/goalify.png';
+import Johor from '../assets/johor.png';
+import FYP from '../assets/mobile.jpg';
 
 const projects = [
   {
     title: 'Satu Malaysia',
     description: 'A tourism promotion website for Malaysia, showcasing tourist attractions in various states.',
-    image: '/resume/johor.png',
+    image: Johor,
     technologies: ['CSS', 'HTML', 'JavaScript'],
     githubUrl: 'https://github.com/liang-lui/Satu-Malaysia.git',
     liveUrl: 'https://github.com/liang-lui/Satu-Malaysia.git'
@@ -28,7 +31,7 @@ const projects = [
   {
     title: 'Goalify',
     description: 'A website for personal goal management, integrating four key modules: exercise tracking, habit tracker, diary journal, and financial management, to help users comprehensively manage their personal life goals.',
-    image: '/resume/goalify.png',
+    image: Goalify,
     technologies: ['PHP', 'HTML', 'Bootstrap', 'CSS'],
     githubUrl: 'https://github.com/JeremyLing04/Goalify',
     liveUrl: 'https://github.com/JeremyLing04/Goalify'
@@ -36,7 +39,7 @@ const projects = [
   {
     title: 'Android Online Music Video Media Player',
     description: 'An Android-based music video streaming application that provides ad-free, subscription-free access to music videos, features biometric recognition and an AI chatbot.',
-    image: '/resume/mobile.jpg',
+    image: FYP,
     technologies: ['Java', 'Firebase', 'AWS'],
     githubUrl: 'https://github.com/liang-lui/Music-Video-Player.git',
     liveUrl: 'https://drive.google.com/file/d/1ePIRkl4QXLEs5aOvIjbVrj7GPn6-lmYl/view?usp=drive_link'
@@ -120,7 +123,7 @@ const Projects = () => {
                 alt={project.title}
                 sx={{ objectFit: 'cover' }}
                 onError={(e) => {
-                  e.target.src = '/2300835.jpg';
+                  e.target.src = project.image;
                   e.target.onerror = null;
                 }}
               />

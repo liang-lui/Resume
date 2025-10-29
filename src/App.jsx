@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashRouter as Router } from 'react-router-dom';
 import {
     ThemeProvider,
     createTheme,
@@ -53,6 +54,7 @@ function App() {
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
+         <Router>
         <ThemeProvider theme={theme}>
 
             <Box
@@ -84,6 +86,7 @@ function App() {
                 <Footer />
             </Box>
         </ThemeProvider>
+        </Router>
     );
 }
 

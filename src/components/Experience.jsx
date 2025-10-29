@@ -12,7 +12,7 @@ import {
 
 const experiences = [
   {
-    image: '/unnamed.png',
+    image: '/resume/unnamed.png',
     title: 'Full Stack Developer',
     company: 'Codex Studio',
     period: '2025 - Present',

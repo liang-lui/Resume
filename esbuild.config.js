@@ -12,17 +12,18 @@ async function copyPublicFiles() {
     fs.mkdirSync(distDir, { recursive: true });
   }
 
-  const files = fs.readdirSync(publicDir);
-  files.forEach(file => {
-    fs.copyFileSync(
-      path.join(publicDir, file),
-      path.join(distDir, file)
-    );
-  });
+  if (fs.existsSync(publicDir)) {
+    const files = fs.readdirSync(publicDir);
+    files.forEach(file => {
+      fs.copyFileSync(
+        path.join(publicDir, file),
+        path.join(distDir, file)
+      );
+    });
+  }
 }
 
 async function build() {
-  // Copy public files to dist
   await copyPublicFiles();
 
   const ctx = await esbuild.context({
@@ -40,10 +41,9 @@ async function build() {
       '.png': 'file',
       '.gif': 'file',
       '.svg': 'file',
-      '.html': 'copy'
     },
     assetNames: 'assets/[name]-[hash]',
-    publicPath: '/',
+    publicPath: '/Resume/', // ✅ Important for GitHub Pages
     define: {
       'process.env.NODE_ENV': isDev ? '"development"' : '"production"'
     },
@@ -65,7 +65,6 @@ async function build() {
     });
     console.log('Server started at http://localhost:3000');
   } else {
-    await ctx.rebuild();
     await ctx.dispose();
   }
 }

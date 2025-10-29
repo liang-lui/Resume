@@ -60,7 +60,7 @@ function App() {
                     minHeight: '100vh',
                     width: '1905px',
                     overflowX: 'hidden',
-                    backgroundImage: "url('/banner-bg.png')",
+                    backgroundImage: "url('/resume/banner-bg.png')",
                     marginTop: -1,
                     marginLeft: -1,
                     marginBottom: -1,

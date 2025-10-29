@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Satu Malaysia',
     description: 'A tourism promotion website for Malaysia, showcasing tourist attractions in various states.',
-    image: '/johor.png',
+    image: '/resume/johor.png',
     technologies: ['CSS', 'HTML', 'JavaScript'],
     githubUrl: 'https://github.com/liang-lui/Satu-Malaysia.git',
     liveUrl: 'https://github.com/liang-lui/Satu-Malaysia.git'
@@ -28,7 +28,7 @@ const projects = [
   {
     title: 'Goalify',
     description: 'A website for personal goal management, integrating four key modules: exercise tracking, habit tracker, diary journal, and financial management, to help users comprehensively manage their personal life goals.',
-    image: '/goalify.png',
+    image: '/resume/goalify.png',
     technologies: ['PHP', 'HTML', 'Bootstrap', 'CSS'],
     githubUrl: 'https://github.com/JeremyLing04/Goalify',
     liveUrl: 'https://github.com/JeremyLing04/Goalify'
@@ -36,7 +36,7 @@ const projects = [
   {
     title: 'Android Online Music Video Media Player',
     description: 'An Android-based music video streaming application that provides ad-free, subscription-free access to music videos, features biometric recognition and an AI chatbot.',
-    image: '/mobile.jpg',
+    image: '/resume/mobile.jpg',
     technologies: ['Java', 'Firebase', 'AWS'],
     githubUrl: 'https://github.com/liang-lui/Music-Video-Player.git',
     liveUrl: 'https://drive.google.com/file/d/1ePIRkl4QXLEs5aOvIjbVrj7GPn6-lmYl/view?usp=drive_link'

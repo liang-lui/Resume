@@ -211,7 +211,7 @@ const Header = () => {
           {/* 头像 */}
           <Avatar
             alt="Wong Sim Bao"
-            src="/2300835.jpg"
+            src="/resume/2300835.jpg"
             sx={{
               width: 250,
               height: 250,

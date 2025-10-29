@@ -72,7 +72,8 @@ function App() {
                 <Container
                     maxWidth="xl"
                     sx={{
-                        px: { xs: 2, sm: 3, md: 4 } // 响应式内边距
+                        px: { xs: 2, sm: 3, md: 4 }, 
+                        overflowX: 'hidden',
                     }}
                 >
                     <Box component="main" sx={{ py: 4 }}>

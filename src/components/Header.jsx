@@ -21,8 +21,8 @@ const Header = () => {
 
   return (
      <Box id="home" component="header" sx={{ 
-      py: { xs: 8, md: 10 }, // 增加垂直内边距
-      pt: { xs: 12, md: 16 }, // 特别增加上边距
+      py: { xs: 6, md: 10 }, // 增加垂直内边距
+      pt: { xs: 10, md: 16 }, // 特别增加上边距
       position: 'relative' 
     }}>
       <Grid
@@ -31,7 +31,7 @@ const Header = () => {
         alignItems="center"
         justifyContent="space-between"
         direction={isMobile ? 'column-reverse' : 'row'}
-        px={isMobile ? 2 : 5}
+        sx={{ px: { xs: 1, sm: 2, md: 5 } }}
       >
         {/* 左边（或下方）文字区域 */}
         <Grid item xs={12} md={8}>

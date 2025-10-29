@@ -43,7 +43,7 @@ async function build() {
       '.svg': 'file',
     },
     assetNames: 'assets/[name]-[hash]',
-    publicPath: '/Resume/', // ✅ Important for GitHub Pages
+    publicPath: isDev ? '/' : '/Resume/', // ✅ Important for GitHub Pages
     define: {
       'process.env.NODE_ENV': isDev ? '"development"' : '"production"'
     },
